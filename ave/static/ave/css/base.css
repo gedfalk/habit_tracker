@@ -1,0 +1,22 @@
+.header {
+    height: 5vh;
+    background-color: #748CBC;
+
+    padding: 8px 50px;
+  }
+
+  .header__title {
+    transform: translateX(0);
+    color: #fff;
+    align-self: center;
+  }
+
+  .btn_header {
+    color: #3B5993;
+    background-color: #839FD4;
+    /*border-color: #748CBC;*/
+
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+  }

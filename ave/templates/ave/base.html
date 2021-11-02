@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ave</title>
+    <meta charset="utf-8">
+    {% load static %}
+    <link href={% static 'ave/css/base.css' %} type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <button type="button" class="btn_header">Архив</button>       
+        <button type="button" class="btn_header">Трекер</button>       
+        <button type="button" class="btn_header">Сессия</button>       
+        
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>
