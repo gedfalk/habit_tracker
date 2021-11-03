@@ -15,14 +15,30 @@
 
 }
 
+.btn_header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: 3rem;
+  padding: 0.4rem 3rem;  
+  border-radius: 0.3rem;
+}
+
 a.btn_header {
   color: #3B5993;
   background-color: #839FD4;
-  text-decoration: none;
-
-  margin-right: 3rem;
-  /*border-color: #748CBC;*/
-  padding: 0.5rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 0.3rem;
+  box-shadow: 0 0 0.5rem;
 }
+
+a.btn_header:hover {
+  color: #3B5993;
+  box-shadow: 0 0 1rem #233558;
+  background-color: #83a3e4;
+}
+
+.img_ava {
+  width: 3rem;
+  background-color: transparent;
+}
+
+

@@ -11,7 +11,10 @@
     <header class="header">
         <div class="nav-item"><a href="/archive/" class="btn_header">Архив</a></div>       
         <div class="nav-item"><a href="/tracker/" class="btn_header">Трекер</a></div>       
-        <div class="nav-item"><a href="/" class="btn_header">...</a></div>     
+        <div class="nav-item"><a href="/" class="btn_header">...</a></div>
+        {% comment %}
+        <div class="nav-item"><img src={% static 'ave/img/ava.png'%} class="img_ava"/></div>     
+        {% endcomment %}
     </header>
 
     {% block content %}{% endblock %}
