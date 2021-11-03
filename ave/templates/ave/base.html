@@ -9,10 +9,9 @@
 
 <body>
     <header class="header">
-        <button type="button" class="btn_header">Архив</button>       
-        <button type="button" class="btn_header">Трекер</button>       
-        <button type="button" class="btn_header">Сессия</button>       
-        
+        <div class="nav-item"><a href="/archive/" class="btn_header">Архив</a></div>       
+        <div class="nav-item"><a href="/tracker/" class="btn_header">Трекер</a></div>       
+        <div class="nav-item"><a href="/" class="btn_header">...</a></div>     
     </header>
 
     {% block content %}{% endblock %}
