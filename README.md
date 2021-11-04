@@ -15,12 +15,12 @@
 </p>
 
 <p align='center' >
-  <img src='/front/figma_tracker.png' width='80%' alt='Страница трекера'>
+  <img src='/front_temp/figma_tracker.png' width='80%' alt='Страница трекера'>
 </p>
 
 <br>
 <p align='center' >
-  <img src='/front/figma_archive.png' width='80%' alt='Страница трекера'>
+  <img src='/front_temp/figma_archive.png' width='80%' alt='Страница архива'>
 </p>
 
 <p align='center'>
