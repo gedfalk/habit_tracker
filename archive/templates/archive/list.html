@@ -2,14 +2,12 @@
 
 {% block title %} Archive {% endblock %}
 {% block content %}
-    <h1>Arhcive</h1>
+    ...
     {% for ses in sessions %}
-        <p>{{ ses.id_activity.shortname_activity }}</p>
-        <h2>
+        <p>{{ ses.id_activity.shortname_activity }}
         {{ ses.title }}
-        </h2>
-        <p>{{ ses.date }}</p>
-        <p>{{ ses.description }}</p>
+        {{ ses.date }}
+        {{ ses.description }}</p>
     {{ ses.body|truncatewords:30|linebreaks }}
     {% endfor %}
 {% endblock %}

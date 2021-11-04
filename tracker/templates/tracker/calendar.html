@@ -2,10 +2,10 @@
 
 {% block title %} Tracker {% endblock %}
 {% block content %}
-    <h1>Tracker</h1>
+    ...
     {% for ses in sessions %}
-        {{ ses.title }}
-        <p>{{ ses.date }}</p>
+    <p>{{ ses.title }}
+        {{ ses.date }}</p>
     {{ ses.body|truncatewords:30|linebreaks }}
     {% endfor %}
 {% endblock %}

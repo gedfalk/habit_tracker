@@ -23,7 +23,20 @@
         </div>
     </header>
 
+    <article class="article_main">
     {% block content %}{% endblock %}
+    </article>
 
+    <article class="footer">
+        <div class="left_container">
+            <div class="footer_str">Habit Tracker &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2021</div>           <!-- ясно-понятно -->
+        </div>
+        <div class="middle_container">
+            <div><a href="https://github.com/gedfalk"><img class="img_git" src={% static 'ave/img/github_4.png'%}/></a></div>            
+        </div> 
+        <div class="right_container">
+            <div class="footer_str">Blite Corp.</div>   
+        </div>
+    </article>
 </body>
 </html>
