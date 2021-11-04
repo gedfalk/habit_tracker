@@ -1,18 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/******************  Header  ****************/
+
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 
   height: 5vh;
   background-color: #748CBC;
-  padding: 8px 50px;
-
+  padding: 0.5rem 0.5rem;
 }
 
-.nav_item {
-  display: block;
+.left_container {
+  flex-grow: 1.2;     /*подправить эту дичь*/
+  display: flex;
+  justify-content: flex-start;
+}
 
+.middle_container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right_container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .btn_header {
@@ -36,9 +55,22 @@ a.btn_header:hover {
   background-color: #83a3e4;
 }
 
+a.user_name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-decoration: none;  
+  margin-right: 0.5rem;
+  color: #3B5993;
+}
+
+a.user_name:hover {
+  color: #4164aa;
+}
+
 .img_ava {
-  width: 3rem;
-  background-color: transparent;
+  background: transparent;
+  width: 2.75rem;
 }
 
 

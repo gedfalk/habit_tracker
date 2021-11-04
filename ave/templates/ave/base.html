@@ -9,12 +9,18 @@
 
 <body>
     <header class="header">
-        <div class="nav-item"><a href="/archive/" class="btn_header">Архив</a></div>       
-        <div class="nav-item"><a href="/tracker/" class="btn_header">Трекер</a></div>       
-        <div class="nav-item"><a href="/" class="btn_header">...</a></div>
-        {% comment %}
-        <div class="nav-item"><img src={% static 'ave/img/ava.png'%} class="img_ava"/></div>     
-        {% endcomment %}
+        <div class="left_container">
+            <!---->
+        </div>
+        <div class="middle_container">
+            <div class="nav-item"><a href="/archive/" class="btn_header">Архив</a></div>       
+            <div class="nav-item"><a href="/tracker/" class="btn_header">Трекер</a></div>       
+            <div class="nav-item"><a href="/" class="btn_header">...</a></div>
+        </div> 
+        <div class="right_container">
+            <div><a href="/" class="user_name">gedfalk</a></div>
+            <div class="nav_item"><a href="/"><img class="img_ava" src={% static 'ave/img/ava_3.png'%}/></a></div>            
+        </div>
     </header>
 
     {% block content %}{% endblock %}
