@@ -14,6 +14,9 @@ body {
   height: 5vh;
   background-color: #748CBC;
   padding: 0.5rem 0.5rem;
+
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, .2) inset,
+              0 3px 3px rgba(0, 0, 0, .2) inset;
 }
 
 /* поменять flex-grow на flex */
@@ -95,12 +98,11 @@ a.user_name:hover {
   flex-wrap: wrap;
   backdrop-filter: blur(4px);         /* размытие. Оно самое */
   margin: 1rem;
-
-  box-shadow:
-   0 1px 4px rgba(0, 0, 0, .3),
-   -23px 0 20px -23px rgba(0, 0, 0, .8),
-   23px 0 20px -23px rgba(0, 0, 0, .8),
-   0 0 40px rgba(0, 0, 0, .1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),            /* честно потызжено */
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              0 0 40px rgba(0, 0, 0, .1) inset;
+      
 
 }
 
@@ -121,6 +123,9 @@ a.user_name:hover {
   height: 3vh;
   background-color: #748CBC;
   padding: 0.5rem 0.5rem;
+
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, .2) inset,
+              0 3px 3px rgba(0, 0, 0, .2) inset;
 }
 
 /* поменять flex-grow на flex */
