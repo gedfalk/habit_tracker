@@ -4,11 +4,12 @@
 {% block content %}
     {% for ses in sessions %}
         <div class="archive_record">
-            <div class="shortname_activity">{{ ses.id_activity.shortname_activity }}</div>
-            <div class="date">{{ ses.date }}</div>
-            <div class="title">{{ ses.title }}</div>
-            <div class="description">{{ ses.description }}</div>
+            <div class="shortname_activity {{ses.id_activity.color}}7">{{ ses.id_activity.shortname_activity }}</div>
+            <div class="date {{ses.id_activity.color}}3">{{ ses.date|date:"d M" }}</div>
+            <div class="title {{ses.id_activity.color}}3">{{ ses.title }}</div>
+            {% if ses.description %}
+                <div class="description {{ses.id_activity.color}}3">{{ ses.description }}</div>
+            {% endif %}  
         </div>
-    {{ ses.body|truncatewords:30|linebreaks }}
     {% endfor %}
 {% endblock %}

@@ -171,7 +171,6 @@ a.user_name:hover {
 }
 
 .shortname_activity {
-  background: #164DDB;
   color: white;
   margin: 0.2rem 0 0.2rem 0.2rem;
   padding: 0.5rem 0.75rem;
@@ -179,19 +178,23 @@ a.user_name:hover {
 }
 
 .date {
-  background: #A1BCFF;
   margin: 0.2rem 0 0.2rem 0.2rem;
   padding: 0.5rem 1rem;
 }
 
 .title {
-  background: #A1BCFF;
   margin: 0.2rem 0 0.2rem 0.2rem;
   padding: 0.5rem 1rem;
 }
 
 .description {
-  background: #A1BCFF;
   margin: 0.2rem 0.2rem 0.2rem 0.2rem;
   padding: 0.5rem 1rem;
 }
+
+.blue7 { background: #2937C1;}
+.blue3 { background: #A9AFED;}
+.green7 { background: #13D713;}
+.green3 { background: #A3F3A3;}
+.violet7 { background: #801ABD;}
+.violet3 { background: #D0A2EC;}
