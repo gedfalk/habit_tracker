@@ -80,7 +80,10 @@ a.user_name:hover {
   min-height: 100vh;
   background-position: top center;
   background-repeat: no-repeat;
+  display: flex;
 }
+
+
 
 
 
