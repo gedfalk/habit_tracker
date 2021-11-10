@@ -5,7 +5,7 @@
     {% for ses in sessions %}
         <div class="archive_record">
             <div class="shortname_activity {{ses.id_activity.color}}7">{{ ses.id_activity.shortname_activity }}</div>
-            <div class="date {{ses.id_activity.color}}3">{{ ses.date|date:"d M" }}</div>
+            <div class="date {{ses.id_activity.color}}3">{{ ses.date|date:"F j" }}</div>
             <div class="title {{ses.id_activity.color}}3">{{ ses.title }}</div>
             {% if ses.description %}
                 <div class="description {{ses.id_activity.color}}3">{{ ses.description }}</div>

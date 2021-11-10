@@ -166,7 +166,6 @@ a.user_name:hover {
 .archive_record {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
   background: white;
 }
 
@@ -189,7 +188,9 @@ a.user_name:hover {
 
 .description {
   margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.75rem;
+  font-style: italic;
 }
 
 .blue7 { background: #2937C1;}
