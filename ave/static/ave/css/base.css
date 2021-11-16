@@ -77,40 +77,6 @@ a.user_name:hover {
   width: 2.75rem;
 }
 
-/*************************  article_main ****************************/
-
-.article_main {
-  background-image: url("/static/ave/img/background.jpg");      /* можно ли с этим что-то сделать? */
-  min-height: 100vh;
-  background-position: top center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: space-around;
-}
-
-.article_main .left_container {
-  flex: 1 1 20%;
-}
-
-.article_main .middle_container {
-  display: flex;
-  flex: 1 1 60%;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  backdrop-filter: blur(4px);         /* размытие. Оно самое */
-  margin: 1rem;
-  padding: 2rem 3rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),            /* честно потызжено */
-              -23px 0 20px -23px rgba(0, 0, 0, .8),
-              23px 0 20px -23px rgba(0, 0, 0, .8),
-              0 0 40px rgba(0, 0, 0, .1) inset;
-  
-}
-
-.article_main .right_container {    
-  flex: 1 1 20%;
-}
-
 
 /****************************  Footer  ********************************/
 
@@ -161,12 +127,49 @@ a.user_name:hover {
 }
 
 
+/*************************  article_main ****************************/
+
+.article_main {
+  background-image: url("/static/ave/img/background.jpg");      /* можно ли с этим что-то сделать? */
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+}
+
+.article_main .left_container {
+  flex: 1 1 20%;
+}
+
+.article_main .middle_container {
+  display: flex;
+  flex: 1 1 60%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  backdrop-filter: blur(4px);         /* размытие. Оно самое */
+  margin: 1rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3),            /* честно потызжено */
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              0 0 40px rgba(0, 0, 0, .1) inset;
+  
+}
+
+.article_main .right_container {    
+  flex: 1 1 20%;
+}
+
+
 /**************************  Archive_record  **************************/
 
 .archive_record {
   display: flex;
   flex-direction: row;
   background: white;
+  align-items: flex-start;
+  margin: 0.15rem;
 }
 
 .shortname_activity {

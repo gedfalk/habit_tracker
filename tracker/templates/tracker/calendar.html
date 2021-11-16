@@ -2,10 +2,44 @@
 
 {% block title %} Tracker {% endblock %}
 {% block content %}
-    ...
+    <!-- Собственно heatmap календарь -->
+    <div id="cal-heatmap"></div>
+    <script type="text/javascript">
+	    var cal = new CalHeatMap();
+	    cal.init({
+            domain: "month",
+            subDomain: "day",
+            range: 6,
+            cellSize: 25,
+            cellPadding: 3,
+            cellRadius: 5,
+            label: {position: "top"},
+            subDomainTextFormat: "%d",      // убрать нолик
+            
+            // с базовым цветом пока непонятно
+            legendColors: {
+                //min: "#999CDF",
+                min: "#ededed",
+                max: "#070B56",
+                //base: "#ededed"
+                //empty: "#ededed"
+            },
+
+            tooltip: true,
+            
+            start: new Date(2021, 9, 15),
+            //displayLegend: false,
+            legendCellSize: 30,
+        });
+    </script>
+
+
+    <!--  
     {% for ses in sessions %}
     <p>{{ ses.title }}
         {{ ses.date }}</p>
     {{ ses.body|truncatewords:30|linebreaks }}
     {% endfor %}
+
+    -->
 {% endblock %}
