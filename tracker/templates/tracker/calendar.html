@@ -2,18 +2,31 @@
 
 {% block title %} Tracker {% endblock %}
 {% block content %}
+
+    {% for ses in sessions %}
+        <spam>
+        {{ ses.date }}
+        ___{{ ses.id_activity }}___
+        {{ ses.title }}
+        </spam>
+    {% endfor %}
+
+
+
     <!-- Собственно heatmap календарь -->
     <div id="cal-heatmap"></div>
     <script type="text/javascript">
 	    var cal = new CalHeatMap();
 	    cal.init({
-            domain: "month",
+            //domain: "month",
+            domain: "week",
             subDomain: "day",
-            range: 6,
+            range: 30,
             cellSize: 25,
             cellPadding: 3,
             cellRadius: 5,
             label: {position: "top"},
+            domainLabelFormat: "",
             subDomainTextFormat: "%d",      // убрать нолик
             
             // с базовым цветом пока непонятно
@@ -34,12 +47,6 @@
     </script>
 
 
-    <!--  
-    {% for ses in sessions %}
-    <p>{{ ses.title }}
-        {{ ses.date }}</p>
-    {{ ses.body|truncatewords:30|linebreaks }}
-    {% endfor %}
+    
 
-    -->
 {% endblock %}
