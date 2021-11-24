@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('ave.urls', namespace='ave')),
     path('archive/', include('archive.urls', namespace='archive')),
     path('tracker/', include('tracker.urls', namespace='tracker')),
+    path('api/', include('tracker.api.urls', namespace='api')),
 ]

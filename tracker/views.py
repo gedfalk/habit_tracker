@@ -10,6 +10,9 @@ def tracker_calendar(request):
     #sessions['IT'] = S.values('datte').filter(id_activity__shortname_activity="IT").annotate(total=Count('id_session')).order_by()
 
     sessions = S.values('datte').filter(id_activity__shortname_activity="IT").annotate(total=Count('id_session')).order_by()
+    
 
     return render(request, 'tracker/calendar.html', {'sessions': sessions})
+
+
 
