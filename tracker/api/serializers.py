@@ -31,6 +31,8 @@ class SessionSerializer(serializers.Serializer):
         return int(time.mktime(instance['datte'].timetuple()))
           
 
+          
+
 
 '''     для отладки в python shell
 

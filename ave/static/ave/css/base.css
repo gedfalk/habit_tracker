@@ -202,3 +202,18 @@ a.user_name:hover {
 .green3 { background: #A3F3A3;}
 .violet7 { background: #801ABD;}
 .violet3 { background: #D0A2EC;}
+
+
+
+/**************************  HeatMap Sessions  **************************/
+
+.heatmap_calendars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px; 
+}
+
+.heatmap {
+  background: white;
+}
