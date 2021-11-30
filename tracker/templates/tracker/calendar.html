@@ -5,16 +5,62 @@
 <div class="heatmap_calendars">
 
     {% for ses in sessions %}
-        
-        
             <!-- Собственно heatmap календарь -->
-            <div class="heatmap">
-                <div id="cal-heatmap">
-                ___{{ ses.id_activity__name_activity }}___
+                <div id="cal-heatmap-{{ ses.id_activity__name_activity }}" class="heatmap">
+                <h3>___{{ ses.id_activity__name_activity }}___</h3>
                 {% load static %}
-                <script type="text/javascript" src={% static 'tracker/js/cal-heatmap.js' %}></script>
+                <!--script type="text/javascript" src={% static 'tracker/js/cal-heatmap.js' %}-->
+                <script type="text/javascript">
+                    // получение json через Django API
+                    var datas = 'http://127.0.0.1:8000/api/sessions/?format=json'
+
+                    // приведение к формату HeatMap
+                    var parser = function(data) {
+                        var stats = {}
+                        for (var d in data) {
+                            stats[data[d].in_seconds] = data[d].total;
+                        }
+                        return stats;
+                    }
+
+                    var cal = new CalHeatMap();
+                    cal.init({
+                        itemSelector: "#cal-heatmap-{{ ses.id_activity__name_activity }}",
+
+                        data: datas,
+                        afterLoadData: parser,
+
+                        //domain: "month",
+                        domain: "week",
+                        subDomain: "day",
+                        //range: 30,
+                        range: 26,
+                        cellSize: 25,
+                        cellPadding: 3,
+                        cellRadius: 5,
+                        label: {position: "top"},
+                        domainLabelFormat: "",
+                        subDomainTextFormat: "%d",      // убрать нолик
+                        
+                        // с базовым цветом пока непонятно
+                        legendColors: {
+                            //min: "#999CDF",
+                            min: "#ededed",
+                            max: "#070B56",
+                            //base: "#ededed",
+                            //empty: "#ededed"
+                        },
+
+                        tooltip: true,
+                        
+                        //start: new Date(2021, 9, 15),
+                        start: new Date(new Date() - 26*7*24*60*60*1000),
+                        //displayLegend: false,
+                        legendCellSize: 30,
+                        legend: [1, 2, 3, 4],
+                    });
+                </script>
                 </div>
-            </div>
 
 
     {% endfor %}

@@ -209,7 +209,7 @@ a.user_name:hover {
 
 .heatmap_calendars {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-around;
   margin: 50px; 
 }
@@ -217,7 +217,7 @@ a.user_name:hover {
 .heatmap {
   margin: 10px;
   padding: 10px;
-  background: white;
+  /*background: white;*/
   border-color: rgba(0, 0, 0, .8);
   border-radius: 5px;
 }
